@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Skills </title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .skills-layout {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr;
+      gap: 3rem;
+      padding: 2rem 0;
+    }
+
+    .pct { font-size: 0.78rem; font-style: italic; color: var(--ink-light); }
+
+    .tool-row {
+      display: flex;
+      justify-content: space-between;
+      padding: 0.38rem 0;
+      border-bottom: 1px dotted var(--border);
+      font-size: 0.85rem;
+    }
+    .tool-row:last-child { border-bottom: none; }
+    .tool-type { font-style: italic; color: var(--ink-light); font-size: 0.78rem; }
+
+    .soft-list { list-style: none; }
+    .soft-list li { padding: 0.35rem 0; border-bottom: 1px dotted var(--border); font-size: 0.88rem; color: var(--ink-light); }
+    .soft-list li::before { content: "✦ "; color: var(--ink-mid); font-size: 0.7rem; }
+    .soft-list li:last-child { border-bottom: none; }
+
+    @media (max-width: 720px) { .skills-layout { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="nav-inner">
+      <a href="about.html" class="nav-logo">Pranaya Shrestha  — Portfolio</a>
+      <ul class="nav-links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html" class="active">Skills</a></li>
+        <li><a href="interests.html">Interests</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="masthead-wrap">
+    <div class="container">
+      <div class="masthead">
+        <div class="masthead-kicker">Kavya School · Grade 11 · Computer Science · CS427</div>
+        <hr class="masthead-rule" />
+        <h1>Skills & Competencies</h1>
+        <hr class="masthead-rule double" />
+        <div class="masthead-sub">A Full Account of Technical & Personal Abilities — 2025</div>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <div class="container">
+      <div class="skills-layout">
+        <div>
+          <span class="section-label">Technical Proficiency</span>
+
+          <div class="progress-wrap">
+            <div class="progress-label"><span>HTML</span><span class="pct">85%</span></div>
+            <div class="progress-bar"><div class="progress-fill" style="width: 85%;"></div></div>
+          </div>
+          <div class="progress-wrap">
+            <div class="progress-label"><span>CSS</span><span class="pct">70% </span></div>
+            <div class="progress-bar"><div class="progress-fill" style="width: 70%;"></div></div>
+          </div>
+          <div class="progress-wrap">
+            <div class="progress-label"><span>Python</span><span class="pct">60%</span></div>
+            <div class="progress-bar"><div class="progress-fill" style="width: 60%;"></div></div>
+          </div>
+          <div class="progress-wrap">
+            <div class="progress-label"><span>JavaScript</span><span class="pct">30%</span></div>
+            <div class="progress-bar"><div class="progress-fill" style="width: 30%;"></div></div>
+          </div>
+          <div class="progress-wrap">
+            <div class="progress-label"><span>Figma</span><span class="pct">40% </span></div>
+            <div class="progress-bar"><div class="progress-fill" style="width: 40%;"></div></div>
+          </div>
+
+          <div style="margin-top: 2rem;">
+            <span class="section-label-black">Instruments & Apparatus</span>
+            <div class="tool-row"><span>Figma</span><span class="tool-type">UI/UX Design</span></div>
+            <div class="tool-row"><span>PowerPoint </span><span class="tool-type">Presentation</span></div>
+            <div class="tool-row"><span>GitHub</span><span class="tool-type">Hosting</span></div>
+            <div class="tool-row"><span>CapCut</span><span class="tool-type">Editing</span></div>
+            <div class="tool-row"><span>MS Word</span><span class="tool-type">Documentation</span></div>
+          </div>
+        </div>
+
+        <div>
+          <span class="section-label">Personal Qualities</span>
+          <ul class="soft-list">
+            <li>Teamwork</li>
+            <li>Communication</li>
+            <li>Time Management</li>
+            <li>Creativity</li>
+            <li>Attention to Detail</li>
+            <li>Social</li>
+            <li>Adaptability</li>
+          </ul>
+
+          <div class="pull-quote" style="margin-top: 2rem;">
+            <p>"Every expert was once a beginner."</p>
+            <cite>— Unknown</cite>
+          </div>
+
+          <!-- Inline style note box -->
+          <div style="margin-top: 1.5rem; border: 1px solid var(--border-strong); padding: 0.9rem; background: var(--paper-dark); font-size: 0.8rem; font-style: italic; color: var(--ink-light);">
+            All skills were acquired through the Grade 11 CS curriculum and independent study conducted outside school hours.
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container" style="padding-bottom: 28px; padding-top: 28px">
+      <p>Typeset by <span>Pranaya Shrestha</span> · Kavya School CS427 · Anno Domini 2025</p>
+    </div>
+  </footer>
+</body>
+</html>
